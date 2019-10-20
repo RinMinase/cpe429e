@@ -1,0 +1,16 @@
+div{
+	
+	padding: 10px;
+
+	border: 2px solid black;
+    color: black;
+
+}
+td{
+	padding:5px;
+}
+
+#one{
+	float: left;
+	margin-left: 50px;
+}

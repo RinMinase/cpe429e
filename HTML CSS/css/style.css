@@ -1,0 +1,214 @@
+/* GLOBAL STYLES */
+
+h1, h2, h3, h4,
+h5, h6, p, li,
+td, th {
+	font-family: arial;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+/* ELEMENT STYLES */
+
+div.container {
+	width: 991px;
+	margin: auto;
+	/*background-color: lightgray;*/
+}
+
+header {
+	position: relative;
+	height: 120px;
+	/*vertical-align: text-bottom;*/
+	background-color: lightcyan;
+}
+
+/*nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}*/
+
+section.body {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px;
+}
+
+section.content {
+	height: auto;
+	display: block;
+	width: 70%;
+	margin: 0px;
+	float: left;
+	padding: 0px 0px 0px 14px;
+	/*background-color: lightblue;*/
+}
+
+aside {
+	height: auto;
+	width: 25%;
+	display: block;
+	float: right;
+	padding: 16px 14px;
+	text-align: center;
+	overflow: auto;
+	/* Light purple */
+	/*background-color: #e1bee7; */
+}
+
+footer {
+	display: block;
+	/*position: absolute;*/
+	bottom: 0px;
+	width: 100%;
+	margin: 15px;
+	/*background-color: lightgreen;*/
+}
+
+/* HEADER STYLES */
+
+header h1 {
+	font-size: 41px;
+	font-family: arial;
+	font-weight: bold;
+	margin: 0px;
+	padding: 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+/* NAV BAR STYLES */
+
+ul.navbar {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+    border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+}
+
+ul.navbar li {
+	float: left;
+}
+
+ul.navbar li a {
+	display: block;
+    color: #666;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: arial;
+}
+
+ul.navbar li a:hover {
+	background-color: #73AD21;
+}
+
+ul.navbar li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+ul.navbar li a.active {
+    color: white;
+    background-color: #2196F3;
+    /*background-color: #3F51B5;*/
+	/*background-color: #4CAF50;*/
+}
+
+/* ASIDE STYLES */
+
+aside p {
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+}
+
+aside p.playlist-title {
+	margin-bottom: 0px;
+}
+
+aside p.playlist-header {
+	font-size: 15px;
+}
+
+aside div.playlist {
+	margin: 20px 0px;
+}
+
+aside div.playlist {
+	/*display: block;*/
+	/*position: relative;*/
+	overflow: auto;
+	float: left;
+	width: 240px;
+}
+
+ul.playlist {
+	width: 55%;
+	text-align: left;
+	margin-top: 0px;
+	margin-left: 5px;
+	display: block;
+	float: left;
+	list-style-type: none;
+	padding: 0px;
+	font-size: 12px;
+}
+
+div.playlist-inner {
+	overflow: hidden;
+}
+
+img.cover {
+	display: block;
+	float: left;
+	border: 1px #e7e7e7 solid;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+}
+
+img.cover.daughtry {
+	background-image: url("../img/daughtry.jpg");
+}
+
+img.cover.kelly {
+	background-image: url("../img/kelly.jpg");
+}
+
+img.cover.taylor {
+	background-image: url("../img/taylor.jpg");
+}
+
+/* FOOTER STYLES */
+
+footer p {
+	text-align: center;
+	font-size: 12px;
+}
+
+/* RESPONSIVE DISPLAY */
+
+@media screen and (max-width: 991px) {
+	div.container {
+		width: 95%;
+	}
+
+	section.body,
+	section.content,
+	aside {
+		width: 98%;
+	}
+}
+
+/*@media screen and (min-width: 991px) {
+	section.content,
+	aside {
+		width: 100%;
+	} 
+}*/

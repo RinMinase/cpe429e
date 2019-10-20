@@ -29,6 +29,7 @@
 					<li><?php echo anchor('profile', 'PROFILE')?></li>
 					<li><?php echo anchor('sched', 'CLASS SCHEDULE')?></li>
 					<li><?php echo anchor('registration', 'REGISTRATION')?></li>
+					<li class="right"><a class="user" href="#loginbox"></a></li>
 				</ul>
 			</nav>
 
@@ -85,5 +86,7 @@
 
 			<?php $this->load->view('footer'); ?>
 		</div>
+
+		<?php $this->load->view('modal'); ?>
 	</body>
 </html>

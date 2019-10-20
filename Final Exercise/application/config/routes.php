@@ -57,5 +57,16 @@ $route['sched'] = "Hacktivity/sched";
 $route['profile'] = "Hacktivity/profile";
 $route['registration'] = "Hacktivity/registration";
 $route['index'] = "Hacktivity/index";
+$route['dashboard'] = "Hacktivity/dashboard";
+$route['admin_dashboard'] = "Hacktivity/admin_dashboard";
+$route['admin_add'] = "Hacktivity/admin_add";
+$route['admin_edit'] = "Hacktivity/admin_edit";
 
 $route['register'] = "Accounts/register";
+$route['login'] = "Accounts/login";
+$route['logout'] = "Accounts/logout";
+$route['delete'] = "Accounts/delete";
+$route['update'] = "Accounts/update";
+
+$route['admin_update'] = "Accounts/admin_update";
+$route['admin_delete'] = "Accounts/admin_delete";

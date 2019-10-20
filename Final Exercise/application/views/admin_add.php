@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 
+<?php
+	if($_SESSION['data'] != 'admin') {
+		redirect('index');
+	}
+
+?>
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -9,10 +16,6 @@
 		<!--script src="<?php echo base_url() ?>resources/js/script.js"></script-->
 
 		<style type="text/css">
-			/* MODAL */
-
-			
-
 			/* REGISTRATION STYLES */
 
 			form.form-register {
@@ -116,28 +119,26 @@
 			}
 		</style>
 
-		<title>Registration</title>
+		<title>Add Account</title>
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<h1>Registration Page</h1>
+				<h1>Admin - Add Account</h1>
 			</header>
 
 			<nav>
 				<ul class="navbar">
-					<li><?php echo anchor('', 'HOME')?></li>
-					<li><?php echo anchor('profile', 'PROFILE')?></li>
-					<li><?php echo anchor('sched', 'CLASS SCHEDULE')?></li>
-					<li><a class="active">REGISTRATION</a></li>
-					<li class="right"><a class="user" href="#loginbox"></a></li>
+					<li><?php echo anchor('admin_dashboard', 'ADMIN DASHBOARD')?></li>
+					<li><a class="active">ADD ACCOUNT</a></li>
+					<li class="right"><?php echo anchor('logout', 'LOGOUT - ' . $this->session->data)?></li>
 				</ul>
 			</nav>
 
 			<section class="body">
-				<section class="content">
+				<!-- <section class="content"> -->
 					<h2>
-						Register on my site!
+						Add Account
 					</h2>
 					<!-- <form action="../php/addData.php" class="form-register" name="registration" method="get"> -->
 					<?php echo form_open('register', 'class="form-register" name="registration"');?>
@@ -148,9 +149,9 @@
 								<div class="subblock">
 									<input type="text" placeholder="Username*" name="txtUsername" required>
 								</div>
-							</div>
+								<!-- </div>
 
-							<div class="topblock">
+								<div class="topblock"> -->
 								<div class="subblock">
 									<input type="password" placeholder="Password*" name="txtPassword" required>
 								</div>
@@ -223,9 +224,9 @@
 							</div>
 						</div>
 					<?php echo form_close();?>
-				</section>
+				<!-- </section> -->
 
-				<?php $this->load->view('sidebar'); ?>
+				<?php // $this->load->view('sidebar'); ?>
 			</section>
 
 			<?php $this->load->view('footer'); ?>

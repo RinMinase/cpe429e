@@ -1,7 +1,7 @@
 function validate() {
 	"use strict";
 
-	var data = [];
+	var data = [], flag = true;
 
 	data[0] = document.registration.txtUsername.value;
 
@@ -24,62 +24,76 @@ function validate() {
 
 	if (data[0]  === "") {
 		document.registration.txtUsername.style.border = "1px solid red";
+		flag = false;
 	} else {
 		document.registration.txtUsername.style.border = "1px solid #A0B3B0";
 	}
 
 	if (data[1]  === "") {
 		document.registration.txtPassword.style.border = "1px solid red";
+		flag = false;
 	} else {
 		document.registration.txtPassword.style.border = "1px solid #A0B3B0";
 	}
 
 	if (data[2] !== data[1] || data[2] === "") {
 		document.registration.txtRepeatPassword.style.border = "1px solid red";
+		flag = false;
 	} else {
 		document.registration.txtRepeatPassword.style.border = "1px solid #A0B3B0";
 	}
 
-	if (data[3]  === "") {
-		document.registration.txtFName.style.border = "1px solid red";
-	} else {
-		document.registration.txtFName.style.border = "1px solid #A0B3B0";
-	}
+	// if (data[3]  === "") {
+	// 	document.registration.txtFName.style.border = "1px solid red";
+	// 	flag = false;
+	// } else {
+	// 	document.registration.txtFName.style.border = "1px solid #A0B3B0";
+	// }
 
-	/*if (data[4]  === "") {
-		document.registration.txtMName.style.border = "1px solid red";
-	} else {
-		document.registration.txtMName.style.border = "1px solid #A0B3B0";
-	}*/
+	// if (data[5]  === "") {
+	// 	document.registration.txtLName.style.border = "1px solid red";
+	// 	flag = false;
+	// } else {
+	// 	document.registration.txtLName.style.border = "1px solid #A0B3B0";
+	// }
 
-	if (data[5]  === "") {
-		document.registration.txtLName.style.border = "1px solid red";
-	} else {
-		document.registration.txtLName.style.border = "1px solid #A0B3B0";
-	}
+	// if (data[6]  === "") {
+	// 	document.registration.dateBirthday.style.border = "1px solid red";
+	// 	flag = false;
+	// } else {
+	// 	document.registration.dateBirthday.style.border = "1px solid #A0B3B0";
+	// }
 
-	if (data[6]  === "") {
-		document.registration.dateBirthday.style.border = "1px solid red";
-	} else {
-		document.registration.dateBirthday.style.border = "1px solid #A0B3B0";
-	}
+	// if (data[8]  === "Married" && data[9] === "") {
+	// 	document.registration.txtSpouse.style.border = "1px solid red";
+	// 	flag = false;
+	// } else {
+	// 	document.registration.txtSpouse.style.border = "1px solid #A0B3B0";
+	// }
 
-	if (data[8]  === "Married" && data[9] === "") {
-		document.registration.txtSpouse.style.border = "1px solid red";
-	} else {
-		document.registration.txtSpouse.style.border = "1px solid #A0B3B0";
-	}
+	// if (data[10]  === "") {
+	// 	document.registration.txtContact.style.border = "1px solid red";
+	// 	flag = false;
+	// } else {
+	// 	document.registration.txtContact.style.border = "1px solid #A0B3B0";
+	// }
 
-	if (data[10]  === "") {
-		document.registration.txtContact.style.border = "1px solid red";
-	} else {
-		document.registration.txtContact.style.border = "1px solid #A0B3B0";
-	}
+	// if (data[11]  === "") {
+	// 	document.registration.txtEmail.style.border = "1px solid red";
+	// 	flag = false;
+	// } else {
+	// 	document.registration.txtEmail.style.border = "1px solid #A0B3B0";
+	// }
 
-	if (data[11]  === "") {
-		document.registration.txtEmail.style.border = "1px solid red";
+	if (flag === true) {
+		alert("wa kasabot code!");
+		window.location.href = "../php/addData.php";
+		return flag;
 	} else {
-		document.registration.txtEmail.style.border = "1px solid #A0B3B0";
+		// return flag;
+		alert("mao jud! wa kasabot code!");
+		window.location.href = "../pages/registration.php";
+		return flag;
 	}
 }
 

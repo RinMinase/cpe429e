@@ -201,10 +201,10 @@
 
 			<nav>
 				<ul class="navbar">
-					<li><a href="../index.html">HOME</a></li>
+					<li><a href="../index.php">HOME</a></li>
 					<li><a class="active">PROFILE</a></li>
-					<li><a href="./class-schedule.html">CLASS SCHEDULE</a></li>
-					<li><a href="./registration.html">REGISTRATION</a></li>
+					<li><a href="./class-schedule.php">CLASS SCHEDULE</a></li>
+					<li><a href="./registration.php">REGISTRATION</a></li>
 				</ul>
 			</nav>
 
@@ -477,71 +477,10 @@
 					</div>
 				</section>
 
-				<aside>
-					<p class="playlist-title">
-						<strong>My Playlist</strong>
-					</p>
-
-					<div class="playlist">
-						<p class="playlist-header">
-							<strong>Daughtry</strong>
-						</p>
-						<div class="playlist-inner">
-							<img class="cover daughtry">
-							<ul class="playlist">
-								<li>Waiting for Superman</li>
-								<li>Battleships</li>
-								<li>I'll Fight</li>
-								<li>Used To</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="playlist">
-						<p class="playlist-header">
-							<strong>Kelly Clarkson</strong>
-						</p>
-						<div class="playlist-inner">
-							<img class="cover kelly">
-							<ul class="playlist">
-								<li>My Life Would Suck Without You</li>
-								<li>Stronger</li>
-								<li>Breakaway</li>
-								<li>Because of You</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="playlist">
-						<p class="playlist-header">
-							<strong>Taylor Swift</strong>
-						</p>
-						<div class="playlist-inner">
-							<img class="cover taylor">
-							<ul class="playlist">
-								<li>The Story of Us</li>
-								<li>Sparks Fly</li>
-								<li>You Belong With Me</li>
-								<li>Mine</li>
-								<li>Should've Said No</li>
-								<li>A Place In This World</li>
-								<li>Ours</li>
-								<li>Picture To Burn</li>
-								<li>Everything Has Changed</li>
-							</ul>
-						</div>
-					</div>
-				</aside>
+				<?php include "../modules/sidebar.html" ?>	
 			</section>
 
-			<footer>
-				<p>
-					A responsive website created with Sublime Text 3 (Paid Version*)<br>
-					Copyright © 2016. Minase Conglomerate.<br>
-					<strong>Rin Minase</strong>
-				</p>
-			</footer>
-
+			<?php include "../modules/footer.html" ?>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,20 @@
+a.waves-effect {
+	width: 50%;
+}
+
+main > .container > .top-row {
+	margin-top: 30px;
+}
+
+.side-nav > .active {
+	background-color: #43a047 !important;
+}
+
+.side-nav > li > a,
+.collapsible-body > ul > li > a {
+	width: 100%
+}
+
+.userView {
+	margin-bottom: 0px !important;
+}

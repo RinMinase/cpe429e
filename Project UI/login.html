@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/icon.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	</style>
+
+	<title>Fooda</title>
+</head>
+<body class="grey darken-4">
+
+	<header>
+		<nav class="green darken-3">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Login</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="row top-row">
+				<form class="col s12 l5" style="margin-top: 40px;">
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="username" type="text" class="validate white-text">
+							<label for="username">Username</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="password" type="password" class="validate white-text">
+							<label for="password">Password</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 right-align">
+							<a onclick="$(this).closest('form').submit()" class="waves-effect waves-light btn">Login</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="row">
+				<div class="col s12 l5 center-align">
+					<hr>
+					<p class="caption white-text">Not yet registered?</p>
+
+					<a class="waves-effect waves-light btn">Register</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="./js/jquery-2.1.1.min.js"></script>
+	<script src="./js/materialize.min.js"></script>
+</body>
+</html>

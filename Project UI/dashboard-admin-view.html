@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/icon.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Fooda</title>
+</head>
+<body class="grey darken-4">
+
+	<header>
+		<nav class="top-nav green darken-3">
+			<div class="container" style="padding-left: 250px;">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Admin Dashboard</a>
+				</div>
+			</div>
+		</nav>
+
+		<ul id="nav-mobile" class="side-nav fixed">
+			<li>
+				<div class="userView">
+					<img class="background" src="./images/image.jpg" style="width: 100%;">
+					<span class="white-text name" style="margin-top: 64px;">Joshua Villahermosa</span>
+					<span class="white-text email">admin@fooda.com</span>
+				</div>
+			</li>
+			<li class="bold">
+				<a href="./dashboard-admin-posts.html" class="waves-effect waves-green"><i class="material-icons">view_quilt</i>Posts</a>
+			</li>
+			<li class="bold">
+				<a href="./dashboard-admin-add.html" class="waves-effect waves-green"><i class="material-icons">playlist_add</i>Add Account or Store</a>
+			</li>
+			<li class="active">
+				<a><i class="material-icons">recent_actors</i>View Accounts</a>
+			</li> 
+		</ul>
+	</header>
+
+	<main>
+		<div class="container" style="padding-left: 250px; margin-right: 30px; width: 85%;">
+			<div class="row top-row">
+				<div class="col s12">
+					<table class="grey lighten-2">
+						<thead>
+							<tr>
+								<th>User Name</th>
+								<th>Store Name</th>
+								<th>Email</th>
+								<th>Post Limit</th>
+								<th>Power Account</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Joshua Villahermosa</td>
+								<td>Pabugnawan</td>
+								<td>pabugs@tc.com</td>
+								<td class="center-align">10</td>
+								<td>
+									<a class="waves-effect waves-light green darken-2 btn" style="width: 95%">Power User</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Kristian Alunan</td>
+								<td></td>
+								<td>info@calda.com</td>
+								<td class="center-align"></td>
+								<td>
+									<a class="waves-effect waves-light grey darken-2 btn modal-trigger" href="#modal" style="width: 95%">Normal User</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+
+	<div id="modal" class="modal" style="width: 400px;">
+		<form>
+			<div class="modal-content">
+				<h4>Power User</h4>
+				<div class="row" style="margin-bottom: 0px;">
+					<div class="input-field col s8">
+						<input id="store-name" type="text" class="validate">
+						<label for="store-name">Store Name</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="post-limit" type="text" value="200" class="validate">
+						<label for="post-limit">Post Limit</label>
+					</div>
+					
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a class="waves-effect waves-light btn green darken-2" style="width: 300px; margin: 0px 44px;">Convert to Power User</a>
+			</div>
+		</form>
+	</div>
+
+	<script src="./js/jquery-2.1.1.min.js"></script>
+	<script src="./js/materialize.min.js"></script>
+
+	<script type="text/javascript">
+		// $(document).ready(function(){
+		// 	$('.parallax').parallax();
+		// });
+
+		$(document).ready(function(){
+			$('.modal-trigger').leanModal();
+		});
+	</script>
+</body>
+</html>
